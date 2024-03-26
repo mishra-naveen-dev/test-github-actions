@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check_file_changes:
+  call_check_file_changes:
     runs-on: ubuntu-latest
     steps:
       - uses: ./.github/workflows/check_file_changes.yml
