@@ -10,6 +10,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Check contents
+        shell: bash
+        run: |
+          ls ./.github/workflows
+          cat ./.github/workflows/check_file_changes.yml
+
       - uses: ./.github/workflows/check_file_changes.yml
 
       - name: Print summary
