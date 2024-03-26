@@ -1,4 +1,4 @@
-name: Check file change action
+name: Caller workflow
 
 on:
   workflow_dispatch:
