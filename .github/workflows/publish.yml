@@ -7,6 +7,9 @@ jobs:
   call_check_file_changes:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - uses: ./.github/workflows/check_file_changes.yml
 
       - name: Print summary
