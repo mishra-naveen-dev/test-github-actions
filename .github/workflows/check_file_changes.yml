@@ -1,7 +1,7 @@
 name: Check file change action
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   check_file_changes:
