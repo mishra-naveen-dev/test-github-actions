@@ -5,4 +5,4 @@ on:
 
 jobs:
   call_check_file_changes:
-    uses: ./.github/workflows/check_file_changes.yml
+    uses: ./.github/actions/check_file_changes.yml
