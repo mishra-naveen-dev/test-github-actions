@@ -1,0 +1,14 @@
+name: Check file change action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check_file_changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/check_file_changes.yml
+
+      - name: Print summary
+        run: |
+          echo "Caller workflow run successful" >> $GITHUB_STEP_SUMMARY
